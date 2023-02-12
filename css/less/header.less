@@ -1,0 +1,78 @@
+/* Header */
+
+.main-header {
+  .container;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  max-width: 1124px;
+}
+
+.logo {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.logo:active {
+  transform: scale(1);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signInBtn {
+  width: 78px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  background: transparent;
+
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  color: #1D1D1D;
+  text-align: center;
+
+  transition: 0.2s ease-in-out;
+}
+
+.signInBtn:hover {
+  border: 1px solid #1D1D1D;
+}
+
+.signInBtn:active {
+  transform: scale(0.9);
+}
+
+.bagBtn {
+  background: transparent;
+  border: none;
+  transition: 0.2s ease-in-out;
+  margin: 0 0 0 27px;
+}
+
+.bagBtn:hover {
+  transform: scale(1.1);
+}
+
+.bagBtn:active {
+  transform: scale(1);
+}

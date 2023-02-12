@@ -1,0 +1,161 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local("Roboto"), url("../fonts/roboto-regular.ttf") format("ttf"), url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.eot") format('embedded-opentype');
+  font-display: swap;
+}
+/* Page container */
+.main-container {
+  max-width: 1124px;
+  margin: 0 auto;
+}
+/* Миксины и переменные LESS */
+.container {
+  width: 100%;
+  padding: 0 97px 0 81px;
+  box-sizing: border-box;
+}
+/* Header */
+.main-header {
+  width: 100%;
+  padding: 0 97px 0 81px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  max-width: 1124px;
+}
+.logo {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.logo:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.logo:active {
+  transform: scale(1);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.signInBtn {
+  width: 78px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  background: transparent;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  color: #1D1D1D;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.signInBtn:hover {
+  border: 1px solid #1D1D1D;
+}
+.signInBtn:active {
+  transform: scale(0.9);
+}
+.bagBtn {
+  background: transparent;
+  border: none;
+  transition: 0.2s ease-in-out;
+  margin: 0 0 0 27px;
+}
+.bagBtn:hover {
+  transform: scale(1.1);
+}
+.bagBtn:active {
+  transform: scale(1);
+}
+/* Main */
+.main {
+  width: 100%;
+  padding: 0 97px 0 81px;
+  box-sizing: border-box;
+  padding-top: 128px;
+  padding-bottom: 80px;
+  background-color: #FFFFFF;
+}
+.search {
+  width: 100%;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none;
+  opacity: 0.5;
+}
+.main-heading {
+  display: block;
+  margin: 56px 0 16px 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+/* Карточки ресторанов */
+.rest-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.rest-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+  width: 308px;
+  transition: 0.2s ease-in-out;
+}
+.rest-card:hover {
+  transform: scale(1.05);
+}
+.rest-card:active {
+  transform: scale(1);
+}
+.rest-name {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1D1D1D;
+  margin: 16px 0 0 0;
+}
+.rest-category {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #626262;
+  margin: 10px 0 0 0;
+}
+.delivery-time {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1D1D1D;
+  margin: 10px 0 0 0;
+}

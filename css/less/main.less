@@ -1,0 +1,92 @@
+/* Main */
+
+.main {
+  .container;
+  padding-top: 128px;
+  padding-bottom: 80px;
+  background-color: #FFFFFF;
+}
+
+.search {
+  width: 100%;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  outline: none;
+  opacity: 0.5;
+}
+
+.main-heading {
+  display: block;
+  margin: 56px 0 16px 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+/* Карточки ресторанов */
+
+.rest-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.rest-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+  width: 308px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.rest-card:hover {
+  transform: scale(1.05);
+}
+.rest-card:active {
+  transform: scale(1.0);
+}
+
+.rest-name {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1D1D1D;
+
+  margin: 16px 0 0 0;
+}
+
+.rest-category {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #626262;
+
+  margin: 10px 0 0 0;
+}
+
+.delivery-time {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1D1D1D;
+
+  margin: 10px 0 0 0;
+}
