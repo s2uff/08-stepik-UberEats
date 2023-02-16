@@ -1,0 +1,177 @@
+/* restaurant.html */
+
+/* Баннер ресторана с названием и фоном */
+
+.restaurant-main {
+  padding: 72px 0 0 0;
+}
+
+.restaurantInfo {
+  padding: 82px 670px 82px 80px;
+  box-sizing: border-box;
+  background-color: #757575;
+  background-image: url("../img/decorate/restaurant-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+
+.restaurantInfo-banner {
+  padding: 38px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: 1fr 32px;
+}
+
+.restaurantInfo-banner-heading {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #1D1D1D;
+  margin: 0 0 50px 0;
+
+  grid-column-start: span 2;
+}
+
+.restaurantInfo-banner-category {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #626262;
+}
+
+.restaurantInfo-banner-deliveryTime {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: center;
+
+  display: block;
+  width: 100px;
+  height: 32px;
+  background: #262626;
+  border-radius: 16px;
+}
+
+/* Переключатель категорий блюд */
+
+.dishes-switcher {
+  padding: 25px 0 25px 81px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dishes-switcher-link {
+  text-decoration: none;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+
+  margin: 0 40px 0 0;
+
+  transition: 0.3s ease-in-out;
+}
+
+.dishes-switcher-link:hover {
+  transform: scale(1.1);
+  color: #262626;
+}
+
+.dishes-switcher-link:active{
+  transform: scale(1);
+}
+
+/* Карточки блюд */
+
+.dishes-cards {
+  padding: 56px 87px 80px 81px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 32px 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 16px;
+}
+
+.dishes-cards-categoryName {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D;
+
+  grid-column-start: span 2;
+}
+
+.dishes-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dishes-card-info {
+  width: 100%;
+  height: 160px;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+
+  padding: 16px 0 16px 16px;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+}
+
+.dishes-card-info:hover {
+  background: #F2F2F2;
+}
+
+.dishes-card-info-name {
+  display: block;
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 4px 0;
+}
+
+.dishes-card-info-description {
+  display: block;
+  width: 100%;
+  height: 21px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+
+  margin: 0 0 58px 0;
+}
+
+.dishes-card-info-price {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
