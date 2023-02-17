@@ -1,0 +1,94 @@
+/* Медиазапрос для restaurant, блок main */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .restaurantInfo {
+    padding: 82px 0 82px 8px;
+  }
+  .restaurantInfo-banner {
+    width: 85%;
+  }
+
+  .restaurantInfo-banner-heading {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .restaurantInfo-banner-category {
+    margin-bottom: 10px;
+  }
+
+  .dishes-switcher {
+    flex-wrap: wrap;
+    padding: 25px 0 25px 8px;;
+  }
+
+  .dishes-switcher-link {
+    margin-bottom: 10px;
+  }
+
+  .dishes-cards {
+    padding: 56px 8px 30px 8px;
+  }
+
+  .dishes-cards-categoryName {
+    text-align: center;
+  }
+
+  .dishes-card {
+    width: 98%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .restaurantInfo {
+    padding: 82px 0 82px 8px;
+    height: 255px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .restaurantInfo-banner {
+    width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -80px;
+    box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
+  }
+
+  .restaurantInfo-banner-heading {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .restaurantInfo-banner-category {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dishes-switcher {
+    display: none;
+  }
+
+  .dishes-cards {
+    padding: 56px 8px 30px 8px;
+  }
+
+  .dishes-cards-categoryName {
+    text-align: center;
+  }
+
+  .dishes-card {
+    width: 100%;
+  }
+
+  .dishes-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .dishes-card-info-description{
+    margin: 0;
+  }
+}
