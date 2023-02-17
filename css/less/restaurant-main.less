@@ -4,10 +4,11 @@
 
 .restaurant-main {
   padding: 72px 0 0 0;
+  box-sizing: border-box;
 }
 
 .restaurantInfo {
-  padding: 82px 670px 82px 80px;
+  padding: 82px 0 82px 80px;
   box-sizing: border-box;
   background-color: #757575;
   background-image: url("../img/decorate/restaurant-bg.jpg");
@@ -20,12 +21,13 @@
 
 .restaurantInfo-banner {
   padding: 38px;
+  width: 389px;
   box-sizing: border-box;
   background-color: #FFFFFF;
 
-  display: grid;
-  grid-template-columns: 1fr 100px;
-  grid-template-rows: 1fr 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .restaurantInfo-banner-heading {

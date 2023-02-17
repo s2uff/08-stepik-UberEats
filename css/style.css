@@ -10,19 +10,10 @@
   max-width: 1124px;
   margin: 0 auto;
 }
-/* Миксины и переменные LESS */
-.container {
-  width: 100%;
-  padding: 0 97px 0 81px;
-  box-sizing: border-box;
-}
 /* Header */
 .main-header {
-  width: 100%;
-  padding: 0 97px 0 81px;
+  padding: 16px 97px 16px 81px;
   box-sizing: border-box;
-  padding-top: 16px;
-  padding-bottom: 16px;
   background: #FFFFFF;
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
   display: flex;
@@ -30,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  width: 100%;
   max-width: 1124px;
 }
 .logo {
@@ -84,11 +76,8 @@
 }
 /* index.html Main */
 .index-main {
-  width: 100%;
-  padding: 0 97px 0 81px;
+  padding: 128px 97px 80px 81px;
   box-sizing: border-box;
-  padding-top: 128px;
-  padding-bottom: 80px;
   background-color: #FFFFFF;
 }
 .search {
@@ -96,13 +85,12 @@
   height: 24px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid #979797;
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   outline: none;
-  opacity: 0.5;
 }
 .main-heading {
   display: block;
@@ -114,10 +102,9 @@
 }
 /* Карточки ресторанов */
 .rest-cards {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .rest-card {
   display: flex;
@@ -126,7 +113,7 @@
   align-items: flex-start;
   padding: 0 0 20px 0;
   box-sizing: border-box;
-  width: 308px;
+  width: 32%;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
@@ -135,6 +122,10 @@
 }
 .rest-card:active {
   transform: scale(1);
+}
+.rest-card-img {
+  display: block;
+  width: 100%;
 }
 .rest-name {
   font-family: 'Roboto', Arial, sans-serif;
@@ -162,11 +153,8 @@
 }
 /* Footer */
 .main-footer {
-  width: 100%;
-  padding: 0 97px 0 81px;
+  padding: 56px 97px 40px 81px;
   box-sizing: border-box;
-  padding-top: 56px;
-  padding-bottom: 40px;
   background-color: #262626;
 }
 .footer1 {
@@ -320,13 +308,17 @@
   color: #FFFFFF;
   margin: 0 150px 0 0;
 }
+.footer4-link:nth-child(3) {
+  margin: 0;
+}
 /* restaurant.html */
 /* Баннер ресторана с названием и фоном */
 .restaurant-main {
   padding: 72px 0 0 0;
+  box-sizing: border-box;
 }
 .restaurantInfo {
-  padding: 82px 670px 82px 80px;
+  padding: 82px 0 82px 80px;
   box-sizing: border-box;
   background-color: #757575;
   background-image: url("../img/decorate/restaurant-bg.jpg");
@@ -337,11 +329,12 @@
 }
 .restaurantInfo-banner {
   padding: 38px;
+  width: 389px;
   box-sizing: border-box;
   background-color: #FFFFFF;
-  display: grid;
-  grid-template-columns: 1fr 100px;
-  grid-template-rows: 1fr 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .restaurantInfo-banner-heading {
   font-family: 'Roboto', Arial, sans-serif;
@@ -465,3 +458,4 @@
   font-weight: 500;
   font-size: 15px;
 }
+/* Медиазапросы */
